@@ -5,3 +5,8 @@ const id = setInterval(function () {
   timeLabel.innerHTML = time.toLocaleTimeString() + "  PM"
   counter++;
 }, 1000);
+
+function yazi(){
+    let textArea = document.getElementsByTagName("h2")[0];
+    textArea.innerHTML = "Düne ait ne varsa dünde kaldı cancağızım! Şimdi yeni bir şeyler söylemek lazım..."
+}
