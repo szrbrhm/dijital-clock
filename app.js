@@ -10,3 +10,15 @@ function yazi(){
     let textArea = document.getElementsByTagName("h2")[0];
     textArea.innerHTML = "Düne ait ne varsa dünde kaldı cancağızım! Şimdi yeni bir şeyler söylemek lazım..."
 }
+
+let area = setInterval(() =>{
+    yazi()
+},20000)
+
+function yaziDelete(){
+    let textArea = document.getElementsByTagName("h2")[0];
+    textArea.innerHTML="";
+}
+ setInterval(()=>{
+     yaziDelete()
+ },5000);
